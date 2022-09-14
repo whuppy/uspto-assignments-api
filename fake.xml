@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+
+<result name="response" numFound="150" start="0">
+  <doc>
+    <str name="id">43911-437</str>
+    <str name="displayId">043911-0437</str>
+    <str name="dtdVersion">1.0</str>
+    <str name="dateProduced">20140916</str>
+    <str name="actionKeyCode">DA</str>
+    <str name="transactionDate">2019-07-16T09:00:32Z</str>
+    <str name="reelNo">43911</str>
+    <str name="frameNo">437</str>
+    <date name="lastUpdateDate">2018-04-03T06:01:20Z</date>
+    <str name="purgeIndicator">N</str>
+    <date name="recordedDate">2017-10-20T04:00:00Z</date>
+    <str name="pageCount">7</str>
+    <str name="conveyanceText">ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).</str>
+    <str name="assignmentRecordHasImages">Y</str>
+    <str name="attorneyDockNum">2400.1.100</str>
+    <str name="corrName">FERRAIUOLI LLC</str>
+    <str name="corrAddress1">221 PONCE DE LEON AVE., 5TH FL</str>
+    <str name="corrAddress2">SAN JUAN, 00917 PUERTO RICO</str>
+    <date name="patAssignorEarliestExDate">2016-07-29T04:00:00Z</date>
+    <arr name="patAssignorName">
+      <str>ROTHSCHILD, LEIGH M.</str>
+      <str>ROTHSCHILD TRUST HOLDINGS, LLC</str>
+      <str>SSR PATENT HOLDINGS, LLC</str>
+      <str>LMR INVENTIONS, LLC</str>
+      <str>ARIEL INVENTIONS, LLC</str>
+      <str>ROTHSCHILD MOBILE IMAGINING INNOVATIONS, LLC</str>
+      <str>ROTHSCHILD DIGITAL MEDIA INNOVATIONS, LLC</str>
+      <str>ROTHSCHILD STORAGE RETRIEVAL INNOVATIONS, LLC</str>
+      <str>TEXAS PATENT IMAGING, LLC</str>
+    </arr>
+    <arr name="patAssignorExDate">
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+      <date>2016-07-29T04:00:00Z</date>
+    </arr>
+    <arr name="patAssignorDateAck">
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+      <str>0001-01-01T00:00:00Z</str>
+    </arr>
+    <arr name="patAssigneeName">
+      <str>ROTHSCHILD PATENT IMAGING I, LLC</str>
+      <str>ROTHSCHILD PATENT IMAGING II, LLC</str>
+      <str>ROTHSCHILD PATENT IMAGING III, LLC</str>
+      <str>ROTHSCHILD PATENT IMAGING IV, LLC</str>
+      <str>ROTHSCHILD PATENT IMAGING V, LLC</str>
+    </arr>
+    <arr name="patAssigneeAddress1">
+      <str>1571 NE QUAYSIDE TERRACE</str>
+      <str>1572 NE QUAYSIDE TERRACE</str>
+      <str>1573 NE QUAYSIDE TERRACE</str>
+      <str>1574 NE QUAYSIDE TERRACE</str>
+      <str>1575 NE QUAYSIDE TERRACE</str>
+    </arr>
+    <arr name="patAssigneeAddress2">
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+    </arr>
+    <arr name="patAssigneeCity">
+      <str>MIAMI</str>
+      <str>MIAMI</str>
+      <str>MIAMI</str>
+      <str>MIAMI</str>
+      <str>MIAMI</str>
+    </arr>
+    <arr name="patAssigneeState">
+      <str>FLORIDA</str>
+      <str>FLORIDA</str>
+      <str>FLORIDA</str>
+      <str>FLORIDA</str>
+      <str>FLORIDA</str>
+    </arr>
+    <arr name="patAssigneeCountryName">
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+      <str>NULL</str>
+    </arr>
+    <arr name="patAssigneePostcode">
+      <str>33131</str>
+      <str>33132</str>
+      <str>33133</str>
+      <str>33134</str>
+      <str>33135</str>
+    </arr>
+    <arr name="inventionTitle">
+      <str>WIRELESS IMAGE DISTRIBUTION SYSTEM AND METHOD</str>
+    </arr>
+    <arr name="inventionTitleLang">
+      <str>en</str>
+    </arr>
+    <arr name="applNum">
+      <str>15612673</str>
+    </arr>
+    <arr name="filingDate">
+      <date>2017-06-02T04:00:00Z</date>
+    </arr>
+    <arr name="intlPublDate">
+      <date>0001-01-01T00:00:00Z</date>
+    </arr>
+    <arr name="intlRegNum">
+      <str>NULL</str>
+    </arr>
+    <arr name="inventors">
+      <str>Leigh M. Rothschild</str>
+    </arr>
+    <arr name="issueDate">
+      <date>2018-04-03T04:00:00Z</date>
+    </arr>
+    <arr name="patNum">
+      <str>9936086</str>
+    </arr>
+    <arr name="pctNum">
+      <str>NULL</str>
+    </arr>
+    <arr name="publDate">
+      <date>2017-10-19T04:00:00Z</date>
+    </arr>
+    <arr name="publNum">
+      <str>20170302808</str>
+    </arr>
+    <int name="patAssignorNameSize">9</int>
+    <int name="patAssignorNameTypeSize">9</int>
+    <int name="patAssignorExDateSize">9</int>
+    <int name="patAssignorDateAckSize">9</int>
+    <int name="patAssigneeNameSize">2</int>
+    <int name="patAssigneeNameTypeSize">0</int>
+    <int name="patAssigneeAddress1Size">1</int>
+    <int name="patAssigneeAddress2Size">1</int>
+    <int name="patAssigneeCitySize">1</int>
+    <int name="patAssigneeStateSize">1</int>
+    <int name="patAssigneeCountryNameSize">1</int>
+    <int name="patAssigneePostcodeSize">1</int>
+    <int name="inventionTitleSize">1</int>
+    <int name="inventionTitleIdSize">1</int>
+    <int name="inventionTitleLangSize">1</int>
+    <int name="applNumSize">1</int>
+    <int name="filingDateSize">1</int>
+    <int name="intlPublDateSize">1</int>
+    <int name="intlRegNumSize">1</int>
+    <int name="inventorsSize">1</int>
+    <int name="issueDateSize">1</int>
+    <int name="patNumSize">1</int>
+    <int name="pctNumSize">1</int>
+    <int name="publDateSize">1</int>
+    <int name="publNumSize">1</int>
+    <str name="inventionTitleFirst">WIRELESS IMAGE DISTRIBUTION SYSTEM AND METHOD</str>
+    <str name="inventionTitleLangFirst">en</str>
+    <str name="applNumFirst">15612673</str>
+    <date name="filingDateFirst">2017-06-02T04:00:00Z</date>
+    <date name="intlPublDateFirst">0001-01-01T00:00:00Z</date>
+    <str name="intlRegNumFirst">NULL</str>
+    <str name="inventorsFirst">Leigh M. Rothschild</str>
+    <date name="issueDateFirst">2018-04-03T04:00:00Z</date>
+    <str name="patNumFirst">9936086</str>
+    <str name="pctNumFirst">NULL</str>
+    <date name="publDateFirst">2017-10-19T04:00:00Z</date>
+    <str name="publNumFirst">20170302808</str>
+    <str name="patAssignorNameFirst">ROTHSCHILD, LEIGH M.</str>
+    <str name="patAssigneeNameFirst">ROTHSCHILD PATENT IMAGING, LLC</str>
+    <arr name="patAssigneePostcodeFacet">
+      <str>33136</str>
+    </arr>
+    <arr name="patAssignorNameFacet">
+      <str>ARIEL INVENTIONS, LLC</str>
+      <str>LMR INVENTIONS, LLC</str>
+      <str>ROTHSCHILD DIGITAL MEDIA INNOVATIONS, LLC</str>
+      <str>ROTHSCHILD MOBILE IMAGINING INNOVATIONS, LLC</str>
+      <str>ROTHSCHILD STORAGE RETRIEVAL INNOVATIONS, LLC</str>
+      <str>ROTHSCHILD TRUST HOLDINGS, LLC</str>
+      <str>ROTHSCHILD, LEIGH M.</str>
+      <str>SSR PATENT HOLDINGS, LLC</str>
+      <str>TEXAS PATENT IMAGING, LLC</str>
+    </arr>
+    <str name="corrNameFacet">FERRAIUOLI LLC</str>
+    <long name="_version_">1639257791552028672</long>
+    <arr name="patAssigneeNameFacet">
+      <str>ROTHSCHILD PATENT IMAGING, LLC</str>
+    </arr>
+    <arr name="patAssigneeCityFacet">
+      <str>MIAMI</str>
+    </arr>
+    <arr name="patAssigneeCountryNameFacet">
+      <str>NULL</str>
+    </arr>
+    <arr name="patAssigneeStateFacet">
+      <str>FLORIDA</str>
+    </arr>
+    <str name="corrNameString">FERRAIUOLI LLC</str></doc>
+</result>
+</response>
