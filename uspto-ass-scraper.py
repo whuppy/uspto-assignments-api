@@ -1,32 +1,21 @@
-#!/usr/bin/python
 import requests
 from lxml import etree
 import sys
+from datetime import datetime
+from dateutil import parser
+import pytz
 
-try:
-    myQuery = sys.argv[1]
-except IndexError:
-    print(f'Usage: {sys.argv[0]} query')
-    sys.exit(1)
-
-rows = 1000
-rqstUrl = f'https://assignment-api.uspto.gov/patent/basicSearch?rows={rows}&query={myQuery}'
-print(rqstUrl)
-rsp = requests.get(rqstUrl)
-print(rsp)
-
-
-xml_ascii = rsp.text.encode('ascii')
-rsproot = etree.fromstring(xml_ascii)
-#rsproot = etree.parse('fake.xml')
-rslt = rsproot.xpath('result')[0]
 
 def spliceAssigneeAddress(addy_tuple):
+    '''
+    addy_tuple consists of (name, addy1, addy2, addy3)
+    splice addys together and return the spliced result
+    '''
     result = ''
     for adt in addy_tuple[1:]:
         if ('NULL' != adt):
             result = f'{result}{adt} '
-    return result[:-1]
+    return result.strip()
 
 def parseDoc(d):
     '''
@@ -77,14 +66,53 @@ def parseDoc(d):
     result['assignees'] = assignees
 
     return result
-    
-doc_dicts = []
-# Find and parse all 'doc' tags
-for d in rslt.iter('doc'):
-    doc_dicts.append(parseDoc(d))
-    # end for loop.
-print(f'doc_dicts created.')
 
-for d in doc_dicts:
-    print(f'{d}\n')
-    
+if __name__ == '__main__':
+    try:
+        myQuery = sys.argv[1]
+    except IndexError:
+        print(f'Usage: {sys.argv[0]} query [start-date [end-date] ] ')
+        sys.exit(1)
+        
+    utc=pytz.UTC
+    start_string = end_string = ''
+    if (len(sys.argv) > 2):
+        start_string = sys.argv[2]
+        start_date = pytz.utc.localize(parser.parse(start_string))
+        #print(start_date)
+        if (len(sys.argv) > 3):
+            end_string = sys.argv[3]
+            end_date = pytz.utc.localize(parser.parse(end_string))
+
+    rows = 1000
+    rqstUrl = f'https://assignment-api.uspto.gov/patent/basicSearch?rows={rows}&query={myQuery}'
+    rsp = requests.get(rqstUrl)
+    xml_ascii = rsp.text.encode('ascii')
+    rsproot = etree.fromstring(xml_ascii)
+    rslt = rsproot.xpath('result')[0]
+
+    doc_dicts = []
+    # Find and parse all 'doc' tags under rslt:
+    for d in rslt.iter('doc'):
+        doc_dicts.append(parseDoc(d))
+    #print(f'{len(doc_dicts)} doc_dicts created.')
+
+    for d in doc_dicts:
+        if ('' == start_string):
+            print(f'{d}\n')
+        else:
+            last_updated = parser.parse(d['last_updated'])
+            if (last_updated > start_date):
+                if ('' == end_string):
+                    print(f'{d}\n')
+                else:
+                    if (last_updated < end_date):
+                        print(f'{d}\n')
+                    else:    
+                        #print(f'{last_updated} after {end_date}')
+                        pass
+            else:
+                #print(f'{last_updated} before {start_date}')
+                pass
+
+            
